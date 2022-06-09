@@ -6,7 +6,8 @@ import rules
 title = turtle.title("Simulation mass - spring")
 
 '''Create scenery'''
-laboratoty = rules.create_image_turtle('laboratorio','gif', 2, 1)
+laboratoty = rules.create_image_turtle('laboratorio','gif', 10, 7)
+rules.creat_turtle_scene('suport', 'square', 'violet', 1, 3, 20, -200, 120)
 
 '''Create a Turtle'''
 mass = turtle.Turtle()
@@ -16,13 +17,6 @@ mass.shape('circle')
 mass.color('black')
 mass.shapesize(1, 1, 1)
 mass.speed(1)
-
-suport = turtle.Turtle()
-suport.hideturtle()
-suport.penup()
-suport.shape('square')
-suport.color('violet')
-suport.shapesize(1, 3, 20)
 
 button_start = turtle.Turtle()
 button_start.hideturtle()
@@ -38,12 +32,8 @@ button_pause.shape('square')
 button_pause.color('red')
 button_pause.shapesize(1, 2, 10)
 
-rules.creat_turtle()
-
 '''initial parameters'''
 t = 0
-suport.setposition(-200, 120)
-suport.showturtle()
 
 button_start.setposition(-120, 140)
 button_start.showturtle()
